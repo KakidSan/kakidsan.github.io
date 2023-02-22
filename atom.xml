@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>天才儿童 1990</title>
+  
+  
+  <link href="https://www.kakid.cc/atom.xml" rel="self"/>
+  
+  <link href="https://www.kakid.cc/"/>
+  <updated>2023-02-22T17:00:16.104Z</updated>
+  <id>https://www.kakid.cc/</id>
+  
+  <author>
+    <name>Kakid</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://www.kakid.cc/hello-world/"/>
+    <id>https://www.kakid.cc/hello-world/</id>
+    <published>2023-02-22T17:00:16.104Z</published>
+    <updated>2023-02-22T17:00:16.104Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
