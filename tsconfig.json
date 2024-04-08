@@ -3,6 +3,8 @@
   "include": ["src/types/*.d.ts", "src/**/*.astro", "src/**/*.ts"],
   "compilerOptions": {
     "baseUrl": ".",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "paths": {
       "~/*": ["src/*"]
     },

@@ -3,6 +3,7 @@ import LayoutDefault from '~/layouts/LayoutDefault.astro'
 import Post from '~/components/Post.astro'
 import { getPosts, getPostDescription } from '~/utils'
 import Pagination from '~/components/Pagination.astro'
+import Search from '~/components/Search.astro'
 
 const posts = (await getPosts()).slice(0, 5)
 
@@ -21,4 +22,5 @@ const { translate: t } = Astro.locals
     }
     <Pagination showLeft={false} showPageCount={false} rightTitle={t('all_posts')} rightUrl={'posts/page/1'} />
   </section>
+  <Search />
 </LayoutDefault>
