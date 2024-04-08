@@ -2,6 +2,8 @@
 
 ---
 
+<div></div>
+
 <script>
 import type { TypedDocument, Orama, Results, SearchParams } from '@orama/orama'
 import { create, insert, search } from '@orama/orama'
@@ -31,5 +33,6 @@ const searchParams: SearchParams<Orama<typeof movieSchema>> = {
   term: 'godfather',
 }
 const result: Results<MovieDocument> = await search(movieDB, searchParams)
+console.log("🚀 ~ result:", result)
 const title = result.hits[0].document.title // well typed!
 </script>

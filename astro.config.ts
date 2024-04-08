@@ -21,5 +21,10 @@ export default defineConfig({
     }),
     robotsTxt(),
     sitemap()
-  ]
+  ],
+  vite: {
+    define: {
+      'process.env': process.env
+    }
+  }
 });

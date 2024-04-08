@@ -1,6 +1,6 @@
 import rss from '@astrojs/rss';
-import { getPosts } from '~/utils';
-import { THEME_CONFIG } from "~/theme.config";
+import { getPosts } from '~/utils/index.ts';
+import { THEME_CONFIG } from "~/theme.config.ts";
 import type { APIContext } from 'astro';
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
