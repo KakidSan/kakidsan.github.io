@@ -1,65 +1,17 @@
 ---
-import { getCollection } from 'astro:content'
 import LayoutDefault from '~/layouts/LayoutDefault.astro'
-const posts = await getCollection('posts')
 ---
 
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+
+<script is:inline src="/pagefind/pagefind-ui.js"></script>
+
 <LayoutDefault>
-  <input type="text" id="search" name="search" />
-
-  <div id="search-results"></div>
-
-  <astro-search data-posts={JSON.stringify(posts)}></astro-search>
+  <div id="search"></div>
 </LayoutDefault>
 
-<script>
-  import { create, insertMultiple, search } from "@orama/orama";
-
-  const db = await create({
-    schema: {
-      id: "string",
-      slug: "string",
-      body: "string",
-      collection: "string",
-      data: {
-        title: "string",
-        tags: {
-          slug: "string",
-          collection: "string",
-        },
-        description: "string",
-        published: "boolean",
-      },
-    },
-  });
-
-  class AstroSearch extends HTMLElement {
-    constructor() {
-      super();
-
-      const posts = JSON.parse(this.dataset.posts || '[]');
-
-      insertMultiple(db, posts);
-
-      const searchInput =
-        document.querySelector<HTMLInputElement>("input#search");
-
-      searchInput?.addEventListener("input", async (e) => {
-        const searchResults = document.querySelector("#search-results");
-        const results = await search(db, { term: (e.target as HTMLInputElement).value });
-        console.log("🚀 ~ AstroSearch ~ searchInput?.addEventListener ~ results:", results)
-        if(!searchResults) return
-        searchResults.innerHTML = ""; // reset displayed results
-
-        for (const result of results.hits) {
-          searchResults.innerHTML += `
-          <a href="/blog/${result.document.slug}">
-            ${result.document.data.title}
-          </a>`;
-        }
-      });
-    }
-  }
-
-  customElements.define("astro-search", AstroSearch);
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: '#search', showSubResults: true })
+  })
 </script>

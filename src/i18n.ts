@@ -7,6 +7,7 @@ export const LANGUAGES = {
     Tags: '标签',
     About: '关于',
     Links: '链接',
+    Search: '搜索',
 
     posted_at: '发布于',
     tag_count: '%d 篇',
@@ -30,6 +31,7 @@ export const LANGUAGES = {
     Tags: 'Tags',
     About: 'About',
     Links: 'Links',
+    Search: 'Search',
 
     posted_at: 'Posted at',
     tag_count: '%d tags',
@@ -53,6 +55,7 @@ export const LANGUAGES = {
     Tags: '標籤',
     About: '關於',
     Links: '鏈接',
+    Search: '搜索',
 
     posted_at: '發佈於',
     tag_count: '%d 篇',
@@ -76,6 +79,7 @@ export const LANGUAGES = {
     Tags: 'タグ',
     About: '私について',
     Links: 'リンク',
+    Search: '検索',
 
     posted_at: '投稿日',
     tag_count: '%d タグ',
