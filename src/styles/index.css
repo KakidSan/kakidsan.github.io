@@ -92,6 +92,7 @@ article.heti blockquote {
   padding: 2px 16px;
   margin: 24px 0;
   border-left: 4px solid #eee;
+  background-color: transparent;
 }
 
 article.heti blockquote p {
