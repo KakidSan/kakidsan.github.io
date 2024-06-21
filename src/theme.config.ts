@@ -47,10 +47,10 @@ export const THEME_CONFIG: App.Locals['config'] = {
   ],
   /** your comment provider */
   comments: {
-    disqus: {
+    // disqus: {
       // please change this to your disqus shortname
-      shortname: "typography-astro",
-    },
+    //   shortname: "typography-astro",
+    // },
     // giscus: {
     //   repo: 'moeyua/astro-theme-typography',
     //   repoId: 'R_kgDOKy9HOQ',
