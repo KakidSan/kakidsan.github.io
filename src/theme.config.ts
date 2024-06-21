@@ -1,34 +1,22 @@
 export const THEME_CONFIG: App.Locals['config'] = {
   /** blog title */
-  title: "活版印字",
+  title: "寫不過半⋯",
   /** your name */
-  author: "Typography",
+  author: "Kakid",
   /** website description */
-  desc: "Rediscory the beauty of typography",
+  desc: "天才兒童 1990",
   /** your deployed domain */
-  website: "https://astro-theme-typography.vercel.app/",
+  website: "https://www.kakid.cc/",
   /** your locale */
-  locale: "en-us",
+  locale: "zh-cn",
   /** theme style */
   themeStyle: "light",
   /** your socials */
   socials: [
     {
-      name: "github",
-      href: "https://github.com/moeyua/astro-theme-typography",
-    },
-    {
       name: "rss",
       href: "/atom.xml",
     },
-    {
-      name: "twitter",
-      href: "https://github.com/moeyua/astro-theme-typography",
-    },
-    {
-      name: "mastodon",
-      href: "https://github.com/moeyua/astro-theme-typography",
-    }
   ],
   /** your header info */
   header: {
